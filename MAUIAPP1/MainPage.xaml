@@ -29,15 +29,9 @@
                 FontSize="18"
                 HorizontalOptions="Center" />
 
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
-
             <Button Text="Login"
-                    HorizontalOptions="Center" />
+                    HorizontalOptions="Center"
+                    Clicked="OnGoToLoginPageClicked" />
 
             <Button Text="Register"
                     HorizontalOptions="Center"

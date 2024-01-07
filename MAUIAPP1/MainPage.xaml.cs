@@ -1,29 +1,49 @@
-﻿namespace MAUIAPP1;
+﻿using System.Security.Cryptography;
+
+namespace MAUIAPP1;
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
+    string connectionString = "Server=database-violetsassignment.cwiyapmmjmbk.ap-southeast-2.rds.amazonaws.com;Database=db_python;User=admin;Password=qazxswedc;";
+    byte[] key;
 
-	public MainPage()
+    public MainPage()
 	{
 		InitializeComponent();
-	}
+        GetTheKey();
+    }
 
-	private void OnCounterClicked(object sender, EventArgs e)
-	{
-		count++;
-
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
-		
-		SemanticScreenReader.Announce(CounterBtn.Text);
-	}
+    private async void OnGoToLoginPageClicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new LoginPage(connectionString, key));
+    }
 
     private async void OnGoToRegisterPageClicked(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new RegisterPage());
+        await Navigation.PushAsync(new RegisterPage(connectionString, key));
+    }
+
+    private void GetTheKey()
+    {
+        string executablePath = AppDomain.CurrentDomain.BaseDirectory;
+        string contentToRemove = "/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/MAUIAPP1.app/Contents/MonoBundle";
+
+        string keyFileName = "key.bin";
+        string keyPath = Path.Combine(executablePath.Replace(contentToRemove, ""), keyFileName);
+
+        if (File.Exists(keyPath))
+        {
+            Console.WriteLine("Key Exists");
+            key = File.ReadAllBytes(keyPath);
+        }
+        else
+        {
+            Console.WriteLine("Key NOT Exists");
+            byte[] randomBytes = new byte[16];
+            RandomNumberGenerator.Fill(randomBytes);
+            File.WriteAllBytes(keyPath, randomBytes);
+            key = randomBytes;
+        }
     }
 }
 

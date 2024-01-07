@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUIAPP1.UserPage"
+             Title="UserPage">
+
+    <ScrollView HeightRequest="600" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <VerticalStackLayout 
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand">
+            <VerticalStackLayout
+                x:Name="userHomeView"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand">
+
+                <Label
+                    x:Name="greetingTitle"
+                    Text="    "
+                    FontSize="24"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+
+                <Label 
+                    Text="      "
+                    FontSize="22"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+
+                <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                    <Button Text="New Contact"
+                            HorizontalOptions="Center"
+                            Clicked="NewContactClicked" />
+
+                    <Button Text="Log Out"
+                            HorizontalOptions="Center"
+                            Clicked="LogOutClicked" />
+                </HorizontalStackLayout>
+
+                <Label 
+                    Text="      "
+                    FontSize="22"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+
+                <Label 
+                    x:Name="contactCounts"
+                    Text="      "
+                    FontSize="22"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+
+                <Label 
+                    Text="      "
+                    FontSize="22"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+
+                <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                    <Entry
+                        x:Name="searchEntry"
+                        Grid.Row="2"
+                        Grid.Column="1" 
+                        Margin="5"
+                        WidthRequest="200" />
+
+                    <Button
+                        x:Name="searchButton"
+                        Text="Search Contact"
+                        HorizontalOptions="Center"
+                        Clicked="SearcchContactClicked" />
+
+                    <Button Text="Clear Search"
+                            HorizontalOptions="Center"
+                            Clicked="ClearSearchClicked" />
+                </HorizontalStackLayout>
+
+                <Label
+                    x:Name="searchTip"
+                    Text="      "
+                    FontSize="22"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                    <ListView ItemsSource="{Binding Contacts}" ItemSelected="OnListViewItemSelected" WidthRequest="700">
+                        <ListView.ItemTemplate >
+                            <DataTemplate >
+                                <ViewCell>
+                                    <StackLayout Spacing="10" Orientation="Horizontal">
+                                        <Label Text="{Binding _name, StringFormat='Contact Name: {0}'}" />
+                                        <Label Text="{Binding _phone, StringFormat='Contact Number: {0}'}" />
+                                        <Label Text="{Binding _email, StringFormat='Contact Email: {0}'}" />
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+
+            </VerticalStackLayout>
+
+            <VerticalStackLayout
+                x:Name="userAddContactView"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                IsVisible="False">
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="300"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Label
+                        x:Name="userAddContactTitle"
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="2"
+                        Text="Add New Contact"
+                        FontSize="24"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center" />
+
+                    <Label
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="2"
+                        Text="        " />
+
+                    <Label
+                        Grid.Row="2"
+                        Grid.Column="0"
+                        Text="Contact Name:"
+                        FontSize="18"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Start" />
+                    <Entry
+                        x:Name="contactNameEntry" 
+                        Grid.Row="2"
+                        Grid.Column="1" 
+                        Margin="5"
+                        Unfocused="CheckContactNameFormat" />
+                    <Label
+                        x:Name="contactNameTip"
+                        Grid.Row="3"
+                        Grid.Column="1"
+                        Text="       "
+                        FontSize="16"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Start"/>
+
+                    <Label
+                        Grid.Row="4"
+                        Grid.Column="0"
+                        Text="Contact Number:"
+                        FontSize="18"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Start"/>
+                    <Entry
+                        x:Name="numberEntry"
+                        Grid.Row="4"
+                        Grid.Column="1"
+                        Margin="5"
+                        />
+                    <Label
+                        Grid.Row="5"
+                        Grid.Column="1"
+                        Text="       "
+                        FontSize="16"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Start"/>
+
+                    <Label
+                        Grid.Row="6"
+                        Grid.Column="0"
+                        Text="Contact Email:"
+                        FontSize="18"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Start"/>
+                    <Entry
+                        x:Name="emailEntry"
+                        Grid.Row="6"
+                        Grid.Column="1"
+                        Margin="5"
+                        />
+                    <Label
+                        Grid.Row="7"
+                        Grid.Column="1"
+                        Text="       "
+                        FontSize="16"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Start"/>
+
+                    <Label
+                        x:Name="SaveTip"
+                        Grid.Row="8"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="2"
+                        FontSize="20"
+                        Text="        "
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center"
+                        />
+
+
+                    <Button
+                        x:Name="BackBtn"
+                        Grid.Row="9"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="2"
+                        Text="Back"
+                        HorizontalOptions="Center"
+                        Clicked="BackButtonClicked"
+                        />
+
+                    <Button
+                        x:Name="SaveBtn"
+                        Grid.Row="10"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="2"
+                        Text="Save"
+                        HorizontalOptions="Center"
+                        Clicked="SubmitNewContactForm"
+                        />
+
+                    
+
+                    <Button
+                        x:Name="UpdateBtn"
+                        Grid.Row="11"
+                        Grid.Column="0"
+                        Text="Update"
+                        HorizontalOptions="Center"
+                        Clicked="UpdateContactForm"
+                        IsVisible="false"
+                        />
+
+                    <Button
+                        x:Name="DeleteBtn"
+                        Grid.Row="11"
+                        Grid.Column="1"
+                        Text="Delete"
+                        HorizontalOptions="Center"
+                        Clicked="DeleteContact"
+                        IsVisible="false"
+                        />
+
+                </Grid>
+               
+
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

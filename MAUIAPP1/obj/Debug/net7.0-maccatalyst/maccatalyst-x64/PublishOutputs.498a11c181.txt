@@ -1,4 +1,9 @@
 /Users/zhangchi/visual-studio-workplace/MAUIAPP1/MAUIAPP1/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../MAUIAPP1.app/Contents/MonoBundle/icudt.dat
+/Users/zhangchi/visual-studio-workplace/MAUIAPP1/MAUIAPP1/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../MAUIAPP1.app/Contents/MonoBundle/BouncyCastle.Cryptography.dll
+/Users/zhangchi/visual-studio-workplace/MAUIAPP1/MAUIAPP1/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../MAUIAPP1.app/Contents/MonoBundle/Google.Protobuf.dll
+/Users/zhangchi/visual-studio-workplace/MAUIAPP1/MAUIAPP1/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../MAUIAPP1.app/Contents/MonoBundle/K4os.Compression.LZ4.dll
+/Users/zhangchi/visual-studio-workplace/MAUIAPP1/MAUIAPP1/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../MAUIAPP1.app/Contents/MonoBundle/K4os.Compression.LZ4.Streams.dll
+/Users/zhangchi/visual-studio-workplace/MAUIAPP1/MAUIAPP1/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../MAUIAPP1.app/Contents/MonoBundle/K4os.Hash.xxHash.dll
 /Users/zhangchi/visual-studio-workplace/MAUIAPP1/MAUIAPP1/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../MAUIAPP1.app/Contents/MonoBundle/Microsoft.Extensions.Configuration.dll
 /Users/zhangchi/visual-studio-workplace/MAUIAPP1/MAUIAPP1/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../MAUIAPP1.app/Contents/MonoBundle/Microsoft.Extensions.Configuration.Abstractions.dll
 /Users/zhangchi/visual-studio-workplace/MAUIAPP1/MAUIAPP1/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../MAUIAPP1.app/Contents/MonoBundle/Microsoft.Extensions.DependencyInjection.dll
@@ -9,6 +14,15 @@
 /Users/zhangchi/visual-studio-workplace/MAUIAPP1/MAUIAPP1/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../MAUIAPP1.app/Contents/MonoBundle/Microsoft.Extensions.Options.dll
 /Users/zhangchi/visual-studio-workplace/MAUIAPP1/MAUIAPP1/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../MAUIAPP1.app/Contents/MonoBundle/Microsoft.Extensions.Primitives.dll
 /Users/zhangchi/visual-studio-workplace/MAUIAPP1/MAUIAPP1/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../MAUIAPP1.app/Contents/MonoBundle/Microsoft.Maui.Graphics.dll
+/Users/zhangchi/visual-studio-workplace/MAUIAPP1/MAUIAPP1/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../MAUIAPP1.app/Contents/MonoBundle/Microsoft.Win32.SystemEvents.dll
+/Users/zhangchi/visual-studio-workplace/MAUIAPP1/MAUIAPP1/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../MAUIAPP1.app/Contents/MonoBundle/MySql.Data.dll
+/Users/zhangchi/visual-studio-workplace/MAUIAPP1/MAUIAPP1/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../MAUIAPP1.app/Contents/MonoBundle/System.Configuration.ConfigurationManager.dll
+/Users/zhangchi/visual-studio-workplace/MAUIAPP1/MAUIAPP1/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../MAUIAPP1.app/Contents/MonoBundle/System.Drawing.Common.dll
+/Users/zhangchi/visual-studio-workplace/MAUIAPP1/MAUIAPP1/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../MAUIAPP1.app/Contents/MonoBundle/System.IO.Pipelines.dll
+/Users/zhangchi/visual-studio-workplace/MAUIAPP1/MAUIAPP1/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../MAUIAPP1.app/Contents/MonoBundle/System.Security.Cryptography.ProtectedData.dll
+/Users/zhangchi/visual-studio-workplace/MAUIAPP1/MAUIAPP1/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../MAUIAPP1.app/Contents/MonoBundle/System.Security.Permissions.dll
+/Users/zhangchi/visual-studio-workplace/MAUIAPP1/MAUIAPP1/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../MAUIAPP1.app/Contents/MonoBundle/System.Windows.Extensions.dll
+/Users/zhangchi/visual-studio-workplace/MAUIAPP1/MAUIAPP1/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../MAUIAPP1.app/Contents/MonoBundle/ZstdSharp.dll
 /Users/zhangchi/visual-studio-workplace/MAUIAPP1/MAUIAPP1/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../MAUIAPP1.app/Contents/MonoBundle/MAUIAPP1.dll
 /Users/zhangchi/visual-studio-workplace/MAUIAPP1/MAUIAPP1/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../MAUIAPP1.app/Contents/MonoBundle/Microsoft.CSharp.dll
 /Users/zhangchi/visual-studio-workplace/MAUIAPP1/MAUIAPP1/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../MAUIAPP1.app/Contents/MonoBundle/Microsoft.VisualBasic.Core.dll

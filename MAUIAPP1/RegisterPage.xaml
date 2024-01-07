@@ -4,13 +4,138 @@
              x:Class="MAUIAPP1.RegisterPage"
              Title="Register"
              >
-    <ScrollView>
-        <VerticalStackLayout>
-             <Label 
-                   Text="Welcome to homepage!"
-                   VerticalOptions="Center" 
-                   HorizontalOptions="Center" />
+    <ScrollView HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="300"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
 
-         </VerticalStackLayout>
+            <Label
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Text="Create your account"
+                FontSize="24"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <Label
+                Grid.Row="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Text="        " />
+
+            <Label
+                Grid.Row="2"
+                Grid.Column="0"
+                Text="Username:"
+                FontSize="18"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start" />
+            <Entry
+                x:Name="usernameEntry"
+                Grid.Row="2"
+                Grid.Column="1" 
+                Margin="5"
+                Unfocused="CheckUsernameFormat" />
+            <Label
+                x:Name="usernameTip"
+                Grid.Row="3"
+                Grid.Column="1"
+                Text="A valid username use only letters, numbers, or symbols (@, ., -, _), and have a length between 6 and 8 characters."
+                TextColor="Grey"
+                FontSize="16"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start"/>
+
+            <Label
+                Grid.Row="4"
+                Grid.Column="0"
+                Text="Password:"
+                FontSize="18"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start"/>
+            <Entry
+                x:Name="passwordEntry"
+                Grid.Row="4"
+                Grid.Column="1"
+                IsPassword="true" 
+                Margin="5"
+                Unfocused="CheckPasswordFormat"
+                />
+            <Label
+                x:Name="passwordTip"
+                Grid.Row="5"
+                Grid.Column="1"
+                Text="A valid password must include at least one digit, one uppercase letter, one lowercase letter, one special character from (@, ., -, _), and have a length between 8 and 10 characters."
+                TextColor="Grey"
+                FontSize="16"
+                LineBreakMode="WordWrap"
+                MinimumWidthRequest="200"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start"/>
+
+
+            <Label
+                Grid.Row="6"
+                Grid.Column="0"
+                Text="Confirm Password:"
+                FontSize="18"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start"/>
+            <Entry
+                x:Name="confirmPasswordEntry"
+                Grid.Row="6"
+                Grid.Column="1"
+                IsPassword="true"
+                Margin="5"
+                Unfocused="CheckConfirmPasswordFormat"
+                />
+            <Label
+                x:Name="confirmPasswordTip"
+                Grid.Row="7"
+                Grid.Column="1"
+                Text=""
+                TextColor="Grey"
+                FontSize="16"
+                LineBreakMode="WordWrap"
+                MinimumWidthRequest="200"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start"/>
+
+            <Label
+                x:Name="submitTip"
+                Grid.Row="8"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                FontSize="20"
+                Text="        "
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                />
+
+            <Button
+                Grid.Row="9"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Text="Submit"
+                HorizontalOptions="Center"
+                Clicked="SubmitRegisterForm"
+                />
+
+        </Grid>
     </ScrollView>
 </ContentPage>

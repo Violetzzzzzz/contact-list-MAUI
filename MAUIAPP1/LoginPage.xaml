@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUIAPP1.LoginPage"
+             Title="LoginPage">
+    <ScrollView HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="300"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Label
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Text="Login"
+                FontSize="24"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <Label
+                Grid.Row="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Text="        " />
+
+            <Label
+                Grid.Row="2"
+                Grid.Column="0"
+                Text="Username:"
+                FontSize="18"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start" />
+            <Entry
+                x:Name="usernameEntry"
+                Text="violetz"
+                Grid.Row="2"
+                Grid.Column="1" 
+                Margin="5"
+                Unfocused="CheckUsernameFormat" />
+            <Label
+                x:Name="usernameTip"
+                Grid.Row="3"
+                Grid.Column="1"
+                Text="       "
+                FontSize="16"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start"/>
+
+            <Label
+                Grid.Row="4"
+                Grid.Column="0"
+                Text="Password:"
+                FontSize="18"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start"/>
+            <Entry
+                x:Name="passwordEntry"
+                Text="Abc123@@"
+                Grid.Row="4"
+                Grid.Column="1"
+                IsPassword="true" 
+                Margin="5"
+                Unfocused="CheckPasswordFormat"
+                />
+            <Label
+                x:Name="passwordTip"
+                Grid.Row="5"
+                Grid.Column="1"
+                Text="       "
+                FontSize="16"
+                LineBreakMode="WordWrap"
+                MinimumWidthRequest="200"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start"/>
+
+            <Label
+                x:Name="loginTip"
+                Grid.Row="6"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                FontSize="20"
+                Text="        "
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                />
+
+            <Button
+                Grid.Row="7"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Text="Login"
+                HorizontalOptions="Center"
+                Clicked="SubmitLoginForm"
+                />
+
+        </Grid>
+    </ScrollView>
+</ContentPage>

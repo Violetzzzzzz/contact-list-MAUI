@@ -26,11 +26,23 @@ build_metadata.AdditionalFiles.ManifestResourceName = MAUIAPP1.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
+[/Users/zhangchi/visual-studio-workplace/MAUIAPP1/MAUIAPP1/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MAUIAPP1.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = LoginPage.xaml
+
 [/Users/zhangchi/visual-studio-workplace/MAUIAPP1/MAUIAPP1/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MAUIAPP1.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[/Users/zhangchi/visual-studio-workplace/MAUIAPP1/MAUIAPP1/RegisteredPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MAUIAPP1.RegisteredPage.xaml
+build_metadata.AdditionalFiles.TargetPath = RegisteredPage.xaml
+build_metadata.AdditionalFiles.RelativePath = RegisteredPage.xaml
 
 [/Users/zhangchi/visual-studio-workplace/MAUIAPP1/MAUIAPP1/RegisterPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
@@ -49,3 +61,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MAUIAPP1.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
+
+[/Users/zhangchi/visual-studio-workplace/MAUIAPP1/MAUIAPP1/UserPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MAUIAPP1.UserPage.xaml
+build_metadata.AdditionalFiles.TargetPath = UserPage.xaml
+build_metadata.AdditionalFiles.RelativePath = UserPage.xaml
