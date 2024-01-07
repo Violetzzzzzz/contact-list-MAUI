@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_PostProcessingItem Include="MAUIAPP1.app/Contents/MacOS/MAUIAPP1">
+      <BCSymbolMapName>MAUIAPP1.bcsymbolmap</BCSymbolMapName>
+      <NoDSymUtil>true</NoDSymUtil>
+      <dSYMSourcePathExists>false</dSYMSourcePathExists>
+      <NoSymbolStrip>true</NoSymbolStrip>
+      <dSYMInfoPlistRelativePath>MAUIAPP1.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
+      <SymbolFile>/Users/zhangchi/visual-studio-workplace/MAUIAPP1/MAUIAPP1/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/mtouch-symbols.list</SymbolFile>
+      <DSymName>MAUIAPP1.app.dSYM</DSymName>
+      <SourceProjectPath>/Users/zhangchi/visual-studio-workplace/MAUIAPP1/MAUIAPP1</SourceProjectPath>
+    </_PostProcessingItem>
+  </ItemGroup>
+</Project>
