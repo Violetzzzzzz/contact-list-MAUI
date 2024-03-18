@@ -4,7 +4,7 @@ namespace MAUIAPP1;
 
 public partial class MainPage : ContentPage
 {
-    string connectionString = "Server=database-violetsassignment.cwiyapmmjmbk.ap-southeast-2.rds.amazonaws.com;Database=db_python;User=admin;Password=qazxswedc;";
+    string connectionString = "";
     byte[] key;
 
     public MainPage()
